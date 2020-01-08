@@ -29,7 +29,7 @@ export default function Book({ navigation }) {
       <Text style={style.label}>DATA DE INTERESSE *</Text>
         <TextInput
           style={style.input}
-          placeholder='Seu e-mail'
+          placeholder='Qual data você quer reservar?'
           placeholderTextColor='#999'
           autoCapitalize='none'
           autoCorrect={false}
@@ -37,7 +37,7 @@ export default function Book({ navigation }) {
           onChangeText={setDate}
         />
                 <TouchableOpacity onPress={handleSubmit} style={style.button} >
-          <Text style={style.buttonText}>Encontrar spots</Text>
+          <Text style={style.buttonText}>Solicitar reserva</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={handleCancel} style={[style.button, style.cancelButton]} >
           <Text style={style.buttonText}>Cancela</Text>
